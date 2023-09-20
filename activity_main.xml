@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F2F7F2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sidebubbles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="306dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Welcome to Eco-lution"
+        android:textSize="26sp"
+        android:textColor="@color/textblack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/login_img"
+        android:layout_width="337dp"
+        android:layout_height="243dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/loginimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/enterphone"
+        android:layout_width="340dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittextstyle"
+        android:gravity="center"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/placeholder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_img" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="340dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="32dp"
+        android:gravity="center"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittextstyle"
+        android:hint="Enter password"
+        android:textColorHint="@color/placeholder"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterphone" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="327dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/green"
+        android:text="Next"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="129dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="48dp"
+        android:text="Forgot password?"
+        android:textColor="@color/blue"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginEnd="4dp"
+        android:text="Don't have an account?"
+        android:textSize="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nextbutton"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@color/white"
+        android:text="sign up"
+        android:textColor="@color/blue"
+        android:textSize="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextbutton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
