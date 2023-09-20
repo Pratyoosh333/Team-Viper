@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/simple_gradient"
+
+        />
+
+    <ImageView
+        android:id="@+id/humaaans_3_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/Humans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="353dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:src="@drawable/Group2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myImageView" />
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="156dp"
+        android:text="Why This App"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/myImageView"
+        app:layout_constraintStart_toStartOf="@+id/myImageView"
+        app:layout_constraintTop_toTopOf="@+id/myImageView" />
+    <TextView
+        android:id="@+id/loremtext"
+        android:layout_width="344dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="590dp"
+        android:layout_marginEnd="16dp"
+        android:text="Lorem Ipsum is simply dummy text of the printing
+and typesetting industry."
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/myImageView"
+        app:layout_constraintStart_toStartOf="@+id/myImageView"
+        app:layout_constraintTop_toTopOf="@+id/humaaans_3_" />
+    <Button
+        android:layout_width="213dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="642dp"
+        android:layout_marginEnd="99dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center_horizontal|top"
+        android:text="Get Started"
+        android:textSize="18dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/green"
+
+        app:layout_constraintEnd_toEndOf="@+id/myImageView"
+        app:layout_constraintStart_toStartOf="@+id/myImageView"
+        app:layout_constraintTop_toTopOf="@+id/humaaans_3_" />
+    <TextView
+        android:layout_width="46dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="NEXT"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/myImageView"
+        app:layout_constraintTop_toTopOf="@+id/myImageView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
